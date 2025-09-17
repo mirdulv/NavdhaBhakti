@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindi Calendar & Panchang - Navdha Bhakti | Hindu Calendar 2024-2025</title>
+    <meta name="description" content="Access complete Hindu Panchang, Hindi calendar with festival dates, auspicious timings, and important Hindu religious dates for 2024-2025.">
+    <meta name="keywords" content="Hindi calendar, Hindu panchang, festival dates, auspicious timings, Hindu calendar 2024, Hindu calendar 2025">
+    <meta name="author" content="Navdha Bhakti Team">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>🕉️ Navdha Bhakti</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="festivals.html">Festivals</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="calendar.html" class="active">Calendar</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Left Sidebar -->
+        <aside class="left-sidebar">
+            <div class="sidebar-section">
+                <h3>🎵 Devotional</h3>
+                <ul>
+                    <li><a href="#bhajans">Bhajans</a></li>
+                    <li><a href="#mantras">Mantras</a></li>
+                    <li><a href="#aarti">Aarti</a></li>
+                    <li><a href="#gita-slokas">Gita Slokas</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3>🏛️ Services</h3>
+                <ul>
+                    <li><a href="#temple-locator">Temple Locator</a></li>
+                    <li><a href="#live-darshan">Live Darshan</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                    <li><a href="#volunteer">Volunteer</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3>📅 Calendar Options</h3>
+                <ul>
+                    <li><a href="#current-month">Current Month</a></li>
+                    <li><a href="#festival-dates">Festival Dates</a></li>
+                    <li><a href="#auspicious-days">Auspicious Days</a></li>
+                    <li><a href="#fasting-days">Fasting Days</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Calendar Hero Section -->
+            <section class="calendar-hero">
+                <div class="calendar-hero-content">
+                    <h1>Hindi Calendar & Panchang</h1>
+                    <p class="lead">Complete Hindu calendar with festival dates, auspicious timings, and religious observances</p>
+                    <div class="current-date-info">
+                        <div class="date-card">
+                            <h3>Today's Date</h3>
+                            <p id="current-date">September 17, 2024</p>
+                            <p id="hindi-date">Bhadrapada Shukla Chaturdashi</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Downloads -->
+            <section class="quick-downloads">
+                <h2>📥 Download Calendars</h2>
+                <div class="download-grid">
+                    <div class="download-card">
+                        <div class="download-icon">📅</div>
+                        <h3>2024 Hindi Calendar</h3>
+                        <p>Complete year calendar with all festivals and important dates</p>
+                        <a href="assets/hindi-calendar-2024.pdf" class="btn btn-primary" download>Download PDF</a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-icon">📅</div>
+                        <h3>2025 Hindi Calendar</h3>
+                        <p>Upcoming year calendar with festival dates and panchang</p>
+                        <a href="assets/hindi-calendar-2025.pdf" class="btn btn-primary" download>Download PDF</a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-icon">🎊</div>
+                        <h3>Festival Calendar</h3>
+                        <p>Dedicated festival calendar with detailed information</p>
+                        <a href="assets/festival-calendar-2024-25.pdf" class="btn btn-secondary" download>Download PDF</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interactive Calendar -->
+            <section class="interactive-calendar" id="current-month">
+                <h2>📅 Current Month Calendar</h2>
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button id="prev-month" class="calendar-nav">‹</button>
+                        <h3 id="calendar-month-year">September 2024</h3>
+                        <button id="next-month" class="calendar-nav">›</button>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="calendar-day-header">Sun</div>
+                        <div class="calendar-day-header">Mon</div>
+                        <div class="calendar-day-header">Tue</div>
+                        <div class="calendar-day-header">Wed</div>
+                        <div class="calendar-day-header">Thu</div>
+                        <div class="calendar-day-header">Fri</div>
+                        <div class="calendar-day-header">Sat</div>
+                        
+                        <!-- Calendar days will be populated by JavaScript -->
+                        <div class="calendar-day">1</div>
+                        <div class="calendar-day">2</div>
+                        <div class="calendar-day">3</div>
+                        <div class="calendar-day">4</div>
+                        <div class="calendar-day">5</div>
+                        <div class="calendar-day">6</div>
+                        <div class="calendar-day">7</div>
+                        <div class="calendar-day">8</div>
+                        <div class="calendar-day">9</div>
+                        <div class="calendar-day">10</div>
+                        <div class="calendar-day">11</div>
+                        <div class="calendar-day">12</div>
+                        <div class="calendar-day">13</div>
+                        <div class="calendar-day">14</div>
+                        <div class="calendar-day">15</div>
+                        <div class="calendar-day">16</div>
+                        <div class="calendar-day today">17</div>
+                        <div class="calendar-day festival">18</div>
+                        <div class="calendar-day">19</div>
+                        <div class="calendar-day">20</div>
+                        <div class="calendar-day">21</div>
+                        <div class="calendar-day">22</div>
+                        <div class="calendar-day">23</div>
+                        <div class="calendar-day">24</div>
+                        <div class="calendar-day">25</div>
+                        <div class="calendar-day">26</div>
+                        <div class="calendar-day">27</div>
+                        <div class="calendar-day">28</div>
+                        <div class="calendar-day">29</div>
+                        <div class="calendar-day">30</div>
+                    </div>
+                </div>
+                <div class="calendar-legend">
+                    <div class="legend-item">
+                        <span class="legend-color today-color"></span>
+                        <span>Today</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color festival-color"></span>
+                        <span>Festival</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color fasting-color"></span>
+                        <span>Fasting Day</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color auspicious-color"></span>
+                        <span>Auspicious Day</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Upcoming Events -->
+            <section class="upcoming-events" id="festival-dates">
+                <h2>🎊 Upcoming Religious Events</h2>
+                <div class="events-timeline">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="date-num">18</span>
+                            <span class="date-month">Sep</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Anant Chaturdashi</h3>
+                            <p class="event-type">Festival</p>
+                            <p>End of Ganesh Chaturthi celebrations with Ganesh Visarjan</p>
+                        </div>
+                    </div>
+
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="date-num">2</span>
+                            <span class="date-month">Oct</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Gandhi Jayanti</h3>
+                            <p class="event-type">National Holiday</p>
+                            <p>Birth anniversary of Mahatma Gandhi</p>
+                        </div>
+                    </div>
+
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="date-num">15</span>
+                            <span class="date-month">Oct</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Navratri Begins</h3>
+                            <p class="event-type">Major Festival</p>
+                            <p>Nine-day celebration of Goddess Durga begins</p>
+                        </div>
+                    </div>
+
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="date-num">24</span>
+                            <span class="date-month">Oct</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Dussehra</h3>
+                            <p class="event-type">Major Festival</p>
+                            <p>Victory of Lord Rama over Ravana</p>
+                        </div>
+                    </div>
+
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="date-num">12</span>
+                            <span class="date-month">Nov</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Diwali</h3>
+                            <p class="event-type">Major Festival</p>
+                            <p>Festival of Lights - Lakshmi Puja</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Panchang Information -->
+            <section class="panchang-info">
+                <h2>📊 Today's Panchang</h2>
+                <div class="panchang-grid">
+                    <div class="panchang-card">
+                        <h3>Tithi</h3>
+                        <p>Chaturdashi</p>
+                        <span class="panchang-detail">14th lunar day</span>
+                    </div>
+                    <div class="panchang-card">
+                        <h3>Nakshatra</h3>
+                        <p>Uttara Phalguni</p>
+                        <span class="panchang-detail">Auspicious star</span>
+                    </div>
+                    <div class="panchang-card">
+                        <h3>Yoga</h3>
+                        <p>Shiva</p>
+                        <span class="panchang-detail">Favorable yoga</span>
+                    </div>
+                    <div class="panchang-card">
+                        <h3>Karana</h3>
+                        <p>Vishti</p>
+                        <span class="panchang-detail">Half tithi</span>
+                    </div>
+                    <div class="panchang-card">
+                        <h3>Vara</h3>
+                        <p>Mangalwar</p>
+                        <span class="panchang-detail">Tuesday</span>
+                    </div>
+                    <div class="panchang-card">
+                        <h3>Rahu Kaal</h3>
+                        <p>3:00 - 4:30 PM</p>
+                        <span class="panchang-detail">Inauspicious time</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Auspicious Times -->
+            <section class="auspicious-times" id="auspicious-days">
+                <h2>⏰ Today's Auspicious Times</h2>
+                <div class="times-grid">
+                    <div class="time-card good">
+                        <h3>Abhijit Muhurat</h3>
+                        <p class="time">12:00 - 12:48 PM</p>
+                        <p class="description">Most auspicious time for any work</p>
+                    </div>
+                    <div class="time-card good">
+                        <h3>Amrit Kaal</h3>
+                        <p class="time">5:30 - 7:00 AM</p>
+                        <p class="description">Favorable for spiritual activities</p>
+                    </div>
+                    <div class="time-card avoid">
+                        <h3>Rahu Kaal</h3>
+                        <p class="time">3:00 - 4:30 PM</p>
+                        <p class="description">Avoid starting new work</p>
+                    </div>
+                    <div class="time-card avoid">
+                        <h3>Yamaganda</h3>
+                        <p class="time">10:30 - 12:00 PM</p>
+                        <p class="description">Inauspicious period</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fasting Days -->
+            <section class="fasting-days" id="fasting-days">
+                <h2>🙏 Upcoming Fasting Days</h2>
+                <div class="fasting-list">
+                    <div class="fasting-item">
+                        <div class="fasting-date">Sep 20</div>
+                        <div class="fasting-details">
+                            <h3>Sankashti Chaturthi</h3>
+                            <p>Fasting for Lord Ganesha</p>
+                            <span class="fasting-type">Partial Fast</span>
+                        </div>
+                    </div>
+                    <div class="fasting-item">
+                        <div class="fasting-date">Oct 2</div>
+                        <div class="fasting-details">
+                            <h3>Karva Chauth</h3>
+                            <p>Fasting for husband's long life</p>
+                            <span class="fasting-type">Full Day Fast</span>
+                        </div>
+                    </div>
+                    <div class="fasting-item">
+                        <div class="fasting-date">Oct 15-24</div>
+                        <div class="fasting-details">
+                            <h3>Navratri Fasting</h3>
+                            <p>Nine days of fasting for Goddess Durga</p>
+                            <span class="fasting-type">9 Days</span>
+                        </div>
+                    </div>
+                    <div class="fasting-item">
+                        <div class="fasting-date">Nov 1</div>
+                        <div class="fasting-details">
+                            <h3>Karva Chauth</h3>
+                            <p>Fasting by married women</p>
+                            <span class="fasting-type">Full Day Fast</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Embedded Calendar -->
+            <section class="embedded-calendar">
+                <h2>📅 Full Year Calendar View</h2>
+                <div class="calendar-embed">
+                    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FKolkata&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0" 
+                            style="border:solid 1px #777; width:100%; height:600px; border-radius:10px;">
+                    </iframe>
+                </div>
+                <p class="calendar-note">
+                    <em>Note: This embedded calendar shows general dates. For precise Hindu calendar dates, please refer to your local panchang or download our PDF calendars above.</em>
+                </p>
+            </section>
+        </div>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <div class="sidebar-section">
+                <h3>📱 Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook">📘 Facebook</a>
+                    <a href="#" class="social-link instagram">📷 Instagram</a>
+                    <a href="#" class="social-link youtube">📺 YouTube</a>
+                    <a href="#" class="social-link twitter">🐦 Twitter</a>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <h3>📅 Quick Reference</h3>
+                <div class="quick-ref">
+                    <div class="ref-item">
+                        <h4>Hindu Months</h4>
+                        <ul>
+                            <li>Chaitra (Mar-Apr)</li>
+                            <li>Vaisakha (Apr-May)</li>
+                            <li>Jyeshtha (May-Jun)</li>
+                            <li>Ashadha (Jun-Jul)</li>
+                            <li>Shravana (Jul-Aug)</li>
+                            <li>Bhadrapada (Aug-Sep)</li>
+                            <li>Ashwin (Sep-Oct)</li>
+                            <li>Kartik (Oct-Nov)</li>
+                            <li>Margashirsha (Nov-Dec)</li>
+                            <li>Pausha (Dec-Jan)</li>
+                            <li>Magha (Jan-Feb)</li>
+                            <li>Phalguna (Feb-Mar)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <h3>📰 Calendar Updates</h3>
+                <div class="updates">
+                    <div class="update-item">
+                        <h4>2025 Calendar Ready</h4>
+                        <p>Download the complete 2025 Hindu calendar</p>
+                    </div>
+                    <div class="update-item">
+                        <h4>Festival Reminders</h4>
+                        <p>Get notified about upcoming festivals</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Navdha Bhakti</h3>
+                <p>Spreading divine love and Hindu values through digital devotion</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="festivals.html">Festivals</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@navdhabhakti.com</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Navdha Bhakti. All rights reserved. | Built with devotion 🙏</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
